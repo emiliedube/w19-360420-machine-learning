@@ -1,4 +1,4 @@
-### kNN Machine Learning Error Analysis Report
+kNN Machine Learning Error Analysis Report
 ===========
 
 ##### Emilie Dubé and Aidan Zentner
