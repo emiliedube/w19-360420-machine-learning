@@ -41,4 +41,31 @@ public class kNNMain{
 
   }
 
+  public static double mean(double[] arr){
+    /*
+    Method that takes as an argument an array of doubles
+    Returns: average of the elements of array, as a double
+    */
+    double sum = 0.0;
+
+    for (double a : arr){
+      sum += a;
+    }
+    return (double)sum/arr.length;
+  }
+
+  public static double standardDeviation(double[] arr){
+    /*
+    Method that takes as an argument an array of doubles
+    Returns: standard deviation of the elements of array, as a double
+    Dependencies: requires the *mean* method written above
+    */
+    double avg = mean(arr);
+    double sum = 0.0;
+    for (double a : arr){
+      sum += Math.pow(a-avg,2);
+    }
+    return (double)sum/arr.length;
+  }
+
 }
