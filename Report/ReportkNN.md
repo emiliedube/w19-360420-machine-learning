@@ -1,4 +1,4 @@
-#### kNN Machine Learning
+### kNN Machine Learning Error Analysis Report
 
 ##### Emilie Dubé and Aidan Zentner
 
@@ -9,3 +9,6 @@
 ##### Section 02
 
 ##### May 14 2019
+
+Confidence in Model
+-------------------
