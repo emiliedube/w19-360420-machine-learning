@@ -1,16 +1,16 @@
 kNN Machine Learning Error Analysis Report
 ===========
 
-##### Emilie Dubé and Aidan Zentner
+##### Authors: Emilie Dubé and Aidan Zentner
 ##### Professors Sameer Bhatnager and Jean-François Brière
 
 ##### Intro to Computer Programming in Engineering and Science
 
-##### Section 02
+##### 360-420-DW Section 02
 
 ##### May 14 2019
 
-Confidence in Model
+Distributions of Model Accuracy: Confidence in Model
 -------------------
 *Why do we get a different accuracy each time we run the classification model?*
 
