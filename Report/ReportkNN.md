@@ -21,6 +21,7 @@ Thus, each time we cut the data set, we work with a different section of data. T
 *How much does performance vary on unseen data?*
 
 Mean:
+
 STD:
 
 *What is a sensible baseline against which we should compare our model's performance?*
@@ -31,7 +32,13 @@ Analysis of Different Error Types
 -------------------
 *What is a False Positive?*
 
+A false positive is a test result that incorrectly indicates the presence of a certain attribute. For instance, our code might indicate the presence
+of a malignant tumor where, in reality, the tumor is benign.
+
 *What is a False Negative*
+
+A false negative is a test result that incorrectly indicates the absence of a certain attribute. For instance, our code might indicate the status
+of the tumor is benign where, in reality, it is malignant.
 
 *What makes the measures of **Recall** and **Precision** different?*
 
@@ -42,9 +49,3 @@ Analysis of Different Error Types
 Description of Results
 --------------------
 
-
-
-```java
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
