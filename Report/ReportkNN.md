@@ -20,13 +20,20 @@ Thus, each time we cut the data set, we work with a different section of data. T
 
 *How much does performance vary on unseen data?*
 
-Mean:
+Performance varies slightly every time the classification model is run. The standard deviation is particularly low.
 
-STD:
+Mean: 0.9695620437956158
+
+STD: 1.7353615003463184 x 10^-4
 
 *What is a sensible baseline against which we should compare our model's performance?*
 
-Line 200 in DataSet.java details a method that prints a label indicating the frequency.
+A sensible baseline to use to compare our model's performance is that of random identification. If the majority of data shows positive,
+then it is safe to run the classification as though all of the data is positive. This way, we will get a maximum accuracy equal to the actual number
+of positive data. This is an obvious and simple baseline.
+
+Line 200 in DataSet.java details a method that prints a label indicating the frequency of a given label. So, if we identify the frequency of a certain label to be,
+say, 70%, then we can safely say that, by running as though all data is that certain label, we will have 70% accuracy.
 
 Analysis of Different Error Types
 -------------------
@@ -46,12 +53,16 @@ Recall, or sensitivity, is the fraction of relevant data received over the total
 positives over the overall number of positives. Precision is the fraction of relevant data over received data. So, it is the fraction of true positives
 over the number of predicted positives (true positives / (true positives + false positives)).
 
-These measures are different because 
+Mean recall: 0.9562880911005326
 
-*What are sensible baselines for each of these measures?*
+Mean precision: 0.9565064856035251
+
+These measures are slightly different because they evaluate a different fraction of data. However, the model generally creates a very similar ratio for
+both measures. This means that the total true positives + false positives is approximately equal to the total positives.
+
+######*What are sensible baselines for each of these measures?*
+
+A sensible baseline for these measures is relatively more complex than the last baseline described. For these, 
 
 *How do the above results change with the **hyperparameter k**?*
-
-Description of Results
---------------------
 
