@@ -42,6 +42,12 @@ of the tumor is benign where, in reality, it is malignant.
 
 *What makes the measures of **Recall** and **Precision** different?*
 
+Recall, or sensitivity, is the fraction of relevant data received over the total number of relevant data selected. Essentially, it is the fraction of true
+positives over the overall number of positives. Precision is the fraction of relevant data over received data. So, it is the fraction of true positives
+over the number of predicted positives (true positives / (true positives + false positives)).
+
+These measures are different because 
+
 *What are sensible baselines for each of these measures?*
 
 *How do the above results change with the **hyperparameter k**?*
