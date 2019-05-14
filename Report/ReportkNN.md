@@ -1,8 +1,8 @@
 kNN Machine Learning Error Analysis Report
 ===========
 
-##### Authors: Emilie Dubé and Aidan Zentner
-##### Professors Sameer Bhatnager and Jean-François Brière
+##### Authors: Emilie DubÃ© and Aidan Zentner
+##### Professors Sameer Bhatnager and Jean-FranÃ§ois BriÃ¨re
 
 ##### Intro to Computer Programming in Engineering and Science
 
@@ -60,12 +60,14 @@ Mean precision: 0.9565064856035251
 These measures are slightly different because they evaluate a different fraction of data. However, the model generally creates a very similar ratio for
 both measures. This means that the total true positives + false positives is approximately equal to the total positives.
 
-######*What are sensible baselines for each of these measures?*
+*What are sensible baselines for each of these measures?*
 
-A sensible baseline for these measures is relatively more complex than the last baseline described. For these, 
+A sensible baseline for these measures is relatively more complex than the last baseline described. For precision, we recommend a baseline of 1. If precision is equal to 1, this indicates an identical ratio. Thus, the prediction is 100% accurate. We assume that the fraction of true positives is equal to the number of predicted positives.
 
-######*How do the above results change with the **hyperparameter k**?*
+For recall, a sensible baseline would be to assume half of the data is positive and the other half, negative. 
 
+*How do the above results change with the **hyperparameter k**?*
 
+The hyperparameter k identifies the number of closest neighbors used to determine the status of an item. A larger k idicates a bigger difficulty in determining the status of the iten. The program is forced to consider a greater number of neighbors before predicting the status.
 
 
